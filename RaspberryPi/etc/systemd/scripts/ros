@@ -1,0 +1,60 @@
+#!/bin/bash
+#Disable ROS logging
+#export ROSCONSOLE_CONFIG_FILE="etc/ros/rosconsole.conf"
+#export ROS_LOG_DIR=/dev/null
+#export ROS_IP="$(hostname -I | sed 's/\ /\n/g' | sed '/192.168/!d')";
+export ROS_IP="$(hostname -I | sed 's/\ /\n/g' | sed '/130.251/!d')";
+#export ROS_MASTER_URI="http://192.168.0.155:11311"
+export ROS_MASTER_URI="http://130.251.13.99:11311"
+#export ROS_PYTHON_LOG_CONFIG_FILE=/dev/null
+
+echo 0 > /sys/class/net/wlan0/device/driver/module/parameters/rtw_power_mgnt
+echo 0 > /sys/class/net/wlan0/device/driver/module/parameters/rtw_lowrate_two_xmit
+echo 0 > /sys/class/net/wlan0/device/driver/module/parameters/rtw_low_power
+cat /sys/class/net/wlan0/device/driver/module/parameters/rtw_power_mgnt /sys/class/net/wlan0/device/driver/module/parameters/rtw_lowrate_two_xmit /sys/class/net/wlan0/device/driver/module/parameters/rtw_low_power
+
+
+SLEEP_INIT=3;
+SLEEP_PERIOD=3;
+#WLAN_NET="DIR510L-4F3C";
+LOCK=/tmp/ros
+
+#Start without rosout
+#if [ $(ps aux | grep -v grep | grep -c rosmaster) -gt 1 ]; then 
+#if [[ -f /tmp/rosmaster ]]; then 
+sleep $SLEEP_INIT;
+#if [ $(ps aux | grep -v grep | grep -c rosmaster) -gt 1 ] || [[ -f "$LOCK" ]]; then 
+#	echo Roscore found. Skipping...;
+#else
+#	echo Roscore not found. Starting...;
+#	rosmaster --core &>/dev/null & # instead of roscore
+#	echo Romaster PID $(ps aux | awk '/rosmater/{print $2}') > "$LOCK"master
+#fi
+
+env > $LOCK
+
+while :; do
+#	if [[ $(iwconfig 2>&1 | grep "ESSID:$WLAN_NET") ]]; then 
+	if [[ $(ifconfig 2>&1 | grep 'wlan0' -A 4 | grep RUNNING) ]]; then 
+		echo Wireless network $WLAN_NET found. Starting ROS Freenect launcher...;
+		source /opt/ros/indigo/setup.bash
+		source /home/pi/ros_catkin_ws/devel_isolated/setup.bash
+		export ROS_MASTER_URI="http://130.251.13.99:11311"
+#		/opt/ros/indigo/bin/roslaunch freenect_launch freenect.launch &
+		/opt/ros/indigo/bin/roslaunch freenect_launch freenect.launch image_mode:=1 respawn:="true" &
+
+		sleep $SLEEP_PERIOD;
+		#Change image mode to high resolution 1:=1280x1024@15fps, 2:=640x480@30fps, 0:=small (320x240@30Hz)
+#		/opt/ros/indigo/bin/rosrun dynamic_reconfigure dynparam set /camera/driver image_mode 1 &
+		echo ROSmaster PID $(ps aux | awk '/rosmaster/{print $2}') > "$LOCK"master;
+		echo Breaking
+		break;
+	fi
+	sleep $SLEEP_PERIOD;
+done
+
+echo Finished >> $LOCK
+sleep $SLEEP_PERIOD;
+echo Looping
+while ps aux | grep -c freenect; do sleep $SLEEP_PERIOD; done &> /dev/null
+#while ps aux | grep -c freenect; do sleep $SLEEP_PERIOD; done

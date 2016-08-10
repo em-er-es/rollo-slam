@@ -1,0 +1,14 @@
+[Unit]
+Description=ROS
+After=network.target
+
+[Service]
+Type=simple
+Nice=-10
+ExecStart=/etc/systemd/scripts/ros
+ExecStop=/etc/systemd/scripts/roskill
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

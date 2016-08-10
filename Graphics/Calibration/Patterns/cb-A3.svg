@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="420mm"
+   height="297mm"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cb-A3.svg"
+   viewBox="0 0 1488.189 1052.3622">
+  <sodipodi:namedview
+     pagecolor="#202020"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="692"
+     id="namedview6"
+     showgrid="true"
+     width="0px"
+     height="0px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.20829625"
+     inkscape:cx="910.75456"
+     inkscape:cy="281.07238"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:showpageshadow="false"
+     borderlayer="true"
+     showborder="true"
+     units="mm"
+     inkscape:snap-grids="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid808"
+       empspacing="6"
+       dotted="true"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="6.0000001"
+       spacingy="6.0000001"
+       color="#1c6f3c"
+       opacity="0.1254902"
+       empcolor="#ff40d9"
+       empopacity="0.1254902" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4477"
+       id="pattern5220"
+       patternTransform="translate(-445.33887,-676.6597)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern4477"
+       id="pattern5201"
+       patternTransform="translate(107.99997,80.362149)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="504"
+       height="504.00001"
+       patternTransform="translate(108,80.362153)"
+       id="pattern4477">
+      <rect
+         y="0"
+         x="0"
+         height="252"
+         width="252"
+         id="rect4473"
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4475"
+         width="252"
+         height="252"
+         x="252"
+         y="252" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="504"
+       height="504.00003"
+       patternTransform="translate(108,80.362099)"
+       id="pattern5211">
+      <rect
+         id="rect4481"
+         y="3.0517578e-05"
+         x="0"
+         height="504"
+         width="504"
+         style="fill:none;stroke:none" />
+      <rect
+         y="3.0517578e-05"
+         x="0"
+         height="252"
+         width="252"
+         id="rect5203"
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5205"
+         width="252"
+         height="252"
+         x="252"
+         y="252.00003" />
+      <rect
+         transform="scale(1,-1)"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5207"
+         width="252"
+         height="252"
+         x="0"
+         y="-504" />
+      <rect
+         transform="scale(1,-1)"
+         y="-252"
+         x="252"
+         height="252"
+         width="252"
+         id="rect5209"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Ernest Skrzypczyk</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,2.6535433e-5)"
+     id="layer1" />
+  <rect
+     style="opacity:1;fill:url(#pattern5220);fill-opacity:1;fill-rule:nonzero;stroke:url(#pattern5201);stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect5199"
+     width="1488.189"
+     height="1052.3622"
+     x="0"
+     y="0" />
+</svg>

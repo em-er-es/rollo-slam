@@ -1,0 +1,3 @@
+#!/bin/bash
+ROSPIDS=$(ps aux|awk '/ros\/indigo/{print $2}');
+for ROSPID in $ROSPIDS; do kill -9 $ROSPID; done

@@ -1,0 +1,7 @@
+#!/bin/bash
+export ROSCONSOLE_CONFIG_FILE="etc/ros/rosconsole.conf"
+#export ROS_LOG_DIR=/dev/null
+export ROS_IP="$(hostname -I | sed 's/\ /\n/g' | sed '/192.168/!d')";
+export ROS_MASTER_URI="http://192.168.0.155:11311"
+export ROS_PYTHON_LOG_CONFIG_FILE=/dev/null
+

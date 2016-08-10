@@ -1,0 +1,20 @@
+#!/bin/bash
+SLEEP_INIT=3;
+SLEEP_PERIOD=10;
+#WLAN_NET="DIR510L-4F3C";
+
+while :; do
+#	if [[ $(iwconfig 2>&1 | grep "ESSID:$WLAN_NET") ]]; then 
+	if [[ $(ifconfig 2>&1 | grep 'wlan0' -A 4 | grep RUNNING) ]]; then 
+		echo Wireless network $WLAN_NET found. Starting ROS Freenect launcher...;
+#		rosmater --core &> /dev/null;
+		sleep $SLEEP_INIT;
+#		roslaunch freenect_launch freenect.launch;
+		source /opt/ros/indigo/setup.bash
+		/opt/ros/indigo/bin/roslaunch freenect_launch freenect.launch &;
+		echo ROSmaster PID $(ps aux | awk '/rosmaster/{print $2}') > /tmp/rosmaster;
+		echo freenect launched > /tmp/ros-freenect;
+		exit 0;
+	fi
+	sleep $SLEEP_PERIOD;
+done
